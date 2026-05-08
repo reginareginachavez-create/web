@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INTRO A HTML</title>
+</head>
+
+<body bgcolor="#cccccc" text="#000000">
+
+    <a href="https://www.google.com" target="_blank">GOOGLE</a>
+
+    <h1>Regina Ruiz</h1>
+    <h2>Regina Ruiz</h2>
+    <h3>Regina Ruiz</h3>
+    <h4>Regina Ruiz</h4>
+    <h5>Regina Ruiz</h5>
+    <h6>Regina Ruiz</h6>
+
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Sed impedit perferendis est consequatur explicabo rem magnam dolor,
+        quos tempore blanditiis incidunt. Magnam rem ea suscipit quo iusto,
+        minus saepe aliquam!
+    </p>
+
+    <hr>
+
+    <marquee behavior="scroll" direction="left">
+        VIVA MEXICO
+    </marquee>
+
+    <marquee behavior="scroll" direction="right">
+        VIVA MEXICO
+    </marquee>
+
+    <ul type="square">
+        <li>Regina</li>
+        <li>Ruiz</li>
+        <li>Ruiz</li>
+        <li>Ruiz</li>
+    </ul>
+
+    <ol type="1">
+        <li>Regina</li>
+        <li>Ruiz</li>
+        <li>Ruiz</li>
+        <li>Ruiz</li>
+    </ol>
+
+    <!-- IMAGENES -->
+
+    <img src="img/ajolotes-anfibios.jpg" alt="Ajolote" width="100" height="100">
+
+    <img src="img/achoque.jpeg" alt="Achoque" width="100" height="100">
+
+    <br><br>
+
+    <a href="dos.html">IR A PAGINA DOS</a>
+
+    <br><br>
+
+    <!-- TABLA -->
+
+    <table border="1" width="100" cellspacing="0" cellpadding="10">
+
+        <tr>
+            <td>Regina</td>
+            <td>Ruiz</td>
+        </tr>
+
+        <tr>
+            <td>Regina</td>
+            <td>Ruiz</td>
+        </tr>
+
+    </table>
+
+    <br><br>
+
+    <!-- VIDEO -->
+
+    <video width="320" height="240" controls>
+        <source src="img/ambistomas.mp4" type="video/mp4">
+        Tu navegador no soporta videos.
+    </video>
+
+    <br><br>
+
+    <!-- YOUTUBE -->
+
+    <iframe width="560"
+        height="315"
+        src="https://www.youtube.com/embed/grIVETx7l5s"
+        title="Youtube video belugas"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin"
+        allowfullscreen>
+    </iframe>
+
+    <h1>FORMULARIOS</h1>
+
+    <form action="procesar.php" method="post">
+
+        <!-- EMAIL -->
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email">
+
+        <br><br>
+
+        <!-- NOMBRE -->
+
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required>
+
+        <br><br>
+
+        <!-- CORREO -->
+
+        <label for="correo">Correo:</label>
+        <input type="email" id="correo" name="correo">
+
+        <br><br>
+
+        <!-- PASSWORD -->
+
+        <label for="password">Contraseña:</label>
+        <input type="password" id="password" name="password">
+
+        <br><br>
+
+        <!-- EDAD -->
+
+        <label for="edad">Edad:</label>
+        <input type="number" id="edad" name="edad" min="1" max="100">
+
+        <br><br>
+
+        <!-- FECHA -->
+
+        <label for="fecha">Fecha de nacimiento:</label>
+        <input type="date" id="fecha" name="fecha">
+
+        <br><br>
+
+        <!-- HORA -->
+
+        <label for="hora">Hora:</label>
+        <input type="time" id="hora" name="hora">
+
+        <br><br>
+
+        <!-- COLOR -->
+
+        <label for="color">Color favorito:</label>
+        <input type="color" id="color" name="color">
+
+        <br><br>
+
+        <!-- ARCHIVO -->
+
+        <label for="archivo">Subir archivo:</label>
+        <input type="file" id="archivo" name="archivo">
+
+        <br><br>
+
+        <!-- RADIO -->
+
+        <label>Género:</label>
+
+        <br>
+
+        <input type="radio" name="genero" value="m">
+        Masculino
+
+        <br>
+
+        <input type="radio" name="genero" value="f">
+        Femenino
+
+        <br><br>
+
+        <!-- CHECKBOX -->
+
+        <label>Intereses:</label>
+
+        <br>
+
+        <input type="checkbox" name="intereses" value="deporte">
+        Deporte
+
+        <br>
+
+        <input type="checkbox" name="intereses" value="musica">
+        Música
+
+        <br><br>
+
+        <!-- SELECT -->
+
+        <label for="pais">País:</label>
+
+        <select id="pais" name="pais">
+
+            <option value="">Selecciona</option>
+            <option value="mexico">México</option>
+            <option value="colombia">Colombia</option>
+            <option value="argentina">Argentina</option>
+
+        </select>
+
+        <br><br>
+
+        <!-- DATALIST -->
+
+        <label for="navegador">Navegador:</label>
+
+        <input list="browsers" name="navegador">
+
+        <datalist id="browsers">
+            <option value="Chrome">
+            <option value="Firefox">
+            <option value="Edge">
+        </datalist>
+
+        <br><br>
+
+        <!-- TEXTAREA -->
+
+        <label for="mensaje">Mensaje:</label>
+
+        <br>
+
+        <textarea id="mensaje" name="mensaje" rows="4" cols="30"></textarea>
+
+        <br><br>
+
+        <!-- RANGE -->
+
+        <label for="rango">Nivel:</label>
+
+        <input type="range" id="rango" name="rango" min="0" max="10">
+
+        <br><br>
+
+        <!-- HIDDEN -->
+
+        <input type="hidden" name="id_usuario" value="12345">
+
+        <!-- BOTONES -->
+
+        <input type="submit" value="Enviar">
+
+        <input type="reset" value="Limpiar">
+
+        <input type="button" value="Botón normal">
+
+    </form>
+
+</body>
+
+</html>
