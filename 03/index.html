@@ -48,6 +48,8 @@
                <td class="w-50 text-center"><h2 id="vradio">0</h2></td>
                 
                 </tr>
+                
+
                 <tr>
                     <td colspan="2"><h2>ANCHO BORDE</h2></td>
                 </tr>
@@ -68,30 +70,87 @@
                     </td>
                 </tr>
                 <tr>
-                    <td colspan="2"><h2>COLOR BORDE</h2></td>
-                </tr>
+                    <td colspan="2" ><h2>COLOR BORDE</h2></td>
                 <tr>
-                    <td colspan="2"> <input type="color" class="form-control" id="colorborde" value="#000000"></td>
+                <td colspan="2"> <input type="color" class="form-control" id="colorborde"></td>
                 </tr>
+                    <td colspan="2"><h2>HORIZONTAL SOMBRA</h2></td>
+</tr>
+<tr>
+    <td class="w-50">
+        <input type="range" class="form-control"
+        id="hsombra" min="-100" max="100" value="0">
+    </td>
+
+    <td class="w-50 text-center">
+        <h2 id="vhsombra">0</h2>
+    </td>
+</tr>
+
+<tr>
+    <td colspan="2"><h2>VERTICAL SOMBRA</h2></td>
+</tr>
+
+<tr>
+    <td class="w-50">
+        <input type="range" class="form-control"
+        id="vsombra" min="-100" max="100" value="0">
+    </td>
+
+    <td class="w-50 text-center">
+        <h2 id="vvsombra">0</h2>
+    </td>
+</tr>
+
+<tr>
+    <td colspan="2"><h2>ANCHO SOMBRA</h2></td>
+</tr>
+
+<tr>
+    <td class="w-50">
+        <input type="range" class="form-control"
+        id="anchosombra" min="0" max="100" value="0">
+    </td>
+
+    <td class="w-50 text-center">
+        <h2 id="vanchosombra">0</h2>
+    </td>
+</tr>
+
+<tr>
+    <td colspan="2"><h2>COLOR SOMBRA</h2></td>
+</tr>
+
+<tr>
+    <td colspan="2">
+        <input type="color"
+        class="form-control"
+        id="colorsombra">
+    </td>
+</tr>
+                
+            </table>
+        </div>
+       <div class="col centrar">
+        <div id="figura">
+
                     
 
-
-            </table>
-            </div>
-
-            <div >
-        <div class="col centrar">
-            <div id="figura"></div>
+        
 
         
     </div>
     
 </div>
+</div>
+
 
     </tr>
     
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js"></script>
     <script src="main.js"></script>
+
+</script>
     
 </body>
 </html>

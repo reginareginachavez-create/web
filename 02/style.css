@@ -2,3 +2,7 @@
     background: #2d9ac4;
 background: linear-gradient(90deg,rgba(45, 154, 196, 1) 0%, rgba(87, 199, 133, 1) 0%, rgba(212, 196, 53, 1) 100%);
 }
+
+body {
+    text-align: center;
+}
